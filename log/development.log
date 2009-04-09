@@ -1,0 +1,495 @@
+
+
+Processing PaymentsController#index (for 127.0.0.1 at 2009-04-09 14:44:20) [GET]
+Rendering template within layouts/application
+Rendering payments/index
+Completed in 966ms (View: 9, DB: 0) | 200 OK [http://localhost/payments/]
+
+
+Processing PaymentsController#index (for 127.0.0.1 at 2009-04-09 14:46:29) [GET]
+Rendering template within layouts/application
+Rendering payments/index
+Completed in 479ms (View: 3, DB: 0) | 200 OK [http://localhost/payments/]
+
+
+Processing PaymentsController#index (for 127.0.0.1 at 2009-04-09 14:50:38) [GET]
+Rendering template within layouts/application
+Rendering payments/index
+
+ActionView::TemplateError (undefined method `DefaultCheckoutUrl' for LwPagtoCerto:Class) on line #4 of app/views/payments/index.html.erb:
+1: <h1>Comprar</h1>
+2: <p>Obrigado por contratar nossos serviços.</p>
+3: 
+4: <% form_tag(:action=>LwPagtoCerto.DefaultCheckoutUrl) do %>
+5:   
+6: <% end -%>
+7: 
+
+    app/views/payments/index.html.erb:4
+
+Rendered rescues/_trace (33.0ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PaymentsController#index (for 127.0.0.1 at 2009-04-09 14:51:13) [GET]
+
+NoMethodError (undefined method `DefaultCheckoutUrl' for LwPagtoCerto:Class):
+  app/controllers/payments_controller.rb:56:in `index'
+
+Rendered rescues/_trace (87.9ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PaymentsController#index (for 127.0.0.1 at 2009-04-09 14:51:25) [GET]
+
+NoMethodError (undefined method `DefaultCheckoutUrl' for LwPagtoCerto:Class):
+  app/controllers/payments_controller.rb:56:in `index'
+
+Rendered rescues/_trace (25.6ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PaymentsController#index (for 127.0.0.1 at 2009-04-09 14:53:38) [GET]
+Rendering template within layouts/application
+Rendering payments/index
+Completed in 462ms (View: 4, DB: 0) | 200 OK [http://localhost/payments/]
+
+
+Processing PaymentsController#index (for 127.0.0.1 at 2009-04-09 14:54:44) [GET]
+Rendering template within layouts/application
+Rendering payments/index
+Completed in 521ms (View: 7, DB: 0) | 200 OK [http://localhost/payments/]
+
+
+Processing PaymentsController#index (for 127.0.0.1 at 2009-04-09 14:55:11) [GET]
+Rendering template within layouts/application
+Rendering payments/index
+Completed in 515ms (View: 82, DB: 0) | 200 OK [http://localhost/payments/]
+
+
+Processing PaymentsController#index (for 127.0.0.1 at 2009-04-09 14:58:51) [GET]
+Rendering template within layouts/application
+Rendering payments/index
+
+ActionView::TemplateError (undefined method `id_transacao' for #<Hash:0x20b8644>) on line #5 of app/views/payments/index.html.erb:
+2: <p>Obrigado por contratar nossos serviços.</p>
+3: 
+4: <% form_tag LwPagtoCerto::DefaultCheckoutUrl do %>
+5: 	<%= hidden_field_tag :tid=> @retorno.id_transacao %>
+6:   <%= submit_tag "Pagar", :id => "submit", :name => "submit", :disable_with => "Aguarde..." %>
+7: <% end -%>
+
+    app/views/payments/index.html.erb:5
+    app/views/payments/index.html.erb:4
+
+Rendered rescues/_trace (35.4ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PaymentsController#index (for 127.0.0.1 at 2009-04-09 14:59:07) [GET]
+Rendering template within layouts/application
+Rendering payments/index
+Completed in 527ms (View: 5, DB: 0) | 200 OK [http://localhost/payments/]
+
+
+Processing PaymentsController#index (for 127.0.0.1 at 2009-04-09 14:59:22) [GET]
+Rendering template within layouts/application
+Rendering payments/index
+Completed in 522ms (View: 4, DB: 0) | 200 OK [http://localhost/payments/]
+
+
+Processing PaymentsController#index (for 127.0.0.1 at 2009-04-09 14:59:28) [GET]
+Rendering template within layouts/application
+Rendering payments/index
+Completed in 466ms (View: 3, DB: 0) | 200 OK [http://localhost/payments/]
+
+
+Processing PaymentsController#index (for 127.0.0.1 at 2009-04-09 14:59:50) [GET]
+Rendering template within layouts/application
+Rendering payments/index
+Completed in 2921ms (View: 2, DB: 0) | 200 OK [http://localhost/payments/]
+
+
+Processing PaymentsController#index (for 127.0.0.1 at 2009-04-09 14:59:54) [GET]
+Rendering template within layouts/application
+Rendering payments/index
+Completed in 470ms (View: 2, DB: 0) | 200 OK [http://localhost/payments/]
+
+
+Processing PaymentsController#index (for 127.0.0.1 at 2009-04-09 15:00:40) [GET]
+Rendering template within layouts/application
+Rendering payments/index
+Completed in 2972ms (View: 4, DB: 0) | 200 OK [http://localhost/payments/]
+
+
+Processing PaymentsController#index (for 127.0.0.1 at 2009-04-09 15:01:03) [GET]
+Rendering template within layouts/application
+Rendering payments/index
+Completed in 428ms (View: 1, DB: 0) | 200 OK [http://localhost/payments/]
+
+
+Processing PaymentsController#index (for 127.0.0.1 at 2009-04-09 15:01:16) [GET]
+Rendering template within layouts/application
+Rendering payments/index
+Completed in 3501ms (View: 1, DB: 0) | 200 OK [http://localhost/payments/]
+
+
+Processing PaymentsController#index (for 127.0.0.1 at 2009-04-09 15:02:32) [GET]
+Rendering template within layouts/application
+Rendering payments/index
+Completed in 464ms (View: 5, DB: 0) | 200 OK [http://localhost/payments/]
+
+
+Processing PaymentsController#index (for 127.0.0.1 at 2009-04-09 15:04:30) [GET]
+Rendering template within layouts/application
+Rendering payments/index
+Completed in 449ms (View: 1, DB: 0) | 200 OK [http://localhost/payments/]
+
+
+Processing PaymentsController#index (for 127.0.0.1 at 2009-04-09 15:04:31) [GET]
+Rendering template within layouts/application
+Rendering payments/index
+Completed in 439ms (View: 1, DB: 0) | 200 OK [http://localhost/payments/]
+
+
+Processing PaymentsController#index (for 127.0.0.1 at 2009-04-09 15:04:55) [GET]
+Rendering template within layouts/application
+Rendering payments/index
+Completed in 534ms (View: 1, DB: 0) | 200 OK [http://localhost/payments/]
+
+
+Processing PaymentsController#index (for 127.0.0.1 at 2009-04-09 15:04:58) [GET]
+Rendering template within layouts/application
+Rendering payments/index
+Completed in 502ms (View: 1, DB: 0) | 200 OK [http://localhost/payments/]
+
+
+Processing PaymentsController#confirmation (for 127.0.0.1 at 2009-04-09 15:05:34) [POST]
+  Parameters: {"__EVENTTARGET"=>"btnEnviar", "tdi"=>"25aba808-0c9d-4e73-98ca-c12653b9a38f", "__EVENTARGUMENT"=>"", "__VIEWSTATE"=>"/wEPDwUKLTY2NTAzODQ0MQ9kFgICAw9kFgICAw8PFgIeC1Bvc3RCYWNrVXJsBStodHRwOi8vbG9jYWxob3N0OjMwMDAvcGF5bWVudHMvY29uZmlybWF0aW9uZGRkmrJNuLDksy/oJsndfln2RU2HqsU=", "__EVENTVALIDATION"=>"/wEWAwKe4uapDAKZlNWrDALf6OqqDKXkd1nBoi+ODKZwicR2R5E/fu7S", "__PREVIOUSPAGE"=>"ldqJol32R_-L-GrJRFJDaJ9Z7XSG1Si-B0QvF35AoUAE5aRgL61p-9ETjeIZd_GB0"}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+
+Rendered rescues/_trace (30.4ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing PaymentsController#index (for 127.0.0.1 at 2009-04-09 15:15:19) [GET]
+Rendering template within layouts/application
+Rendering payments/index
+Completed in 2833ms (View: 3, DB: 0) | 200 OK [http://localhost/payments/]
+
+
+Processing PaymentsController#confirmation (for 127.0.0.1 at 2009-04-09 15:21:19) [POST]
+  Parameters: {"__EVENTTARGET"=>"btnEnviar", "tdi"=>"d2789311-8877-4b5f-b1ac-18f5d4a58a05", "__EVENTARGUMENT"=>"", "__VIEWSTATE"=>"/wEPDwUKLTY2NTAzODQ0MQ9kFgICAw9kFgICAw8PFgIeC1Bvc3RCYWNrVXJsBStodHRwOi8vbG9jYWxob3N0OjMwMDAvcGF5bWVudHMvY29uZmlybWF0aW9uZGRkmrJNuLDksy/oJsndfln2RU2HqsU=", "__EVENTVALIDATION"=>"/wEWAwKe4uapDAKZlNWrDALf6OqqDKXkd1nBoi+ODKZwicR2R5E/fu7S", "__PREVIOUSPAGE"=>"ldqJol32R_-L-GrJRFJDaJ9Z7XSG1Si-B0QvF35AoUAE5aRgL61p-9ETjeIZd_GB0"}
+
+ActionView::MissingTemplate (Missing template payments/confirmation.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PaymentsController#index (for 127.0.0.1 at 2009-04-09 15:23:31) [GET]
+Rendering template within layouts/application
+Rendering payments/index
+Completed in 2406ms (View: 3, DB: 0) | 200 OK [http://localhost/payments/]
+
+
+Processing PaymentsController#confirmation (for 127.0.0.1 at 2009-04-09 15:23:45) [POST]
+  Parameters: {"__EVENTTARGET"=>"btnEnviar", "tdi"=>"6d71d49e-64e3-4ad9-a81c-6c5faf217256", "__EVENTARGUMENT"=>"", "__VIEWSTATE"=>"/wEPDwUKLTY2NTAzODQ0MQ9kFgICAw9kFgICAw8PFgIeC1Bvc3RCYWNrVXJsBStodHRwOi8vbG9jYWxob3N0OjMwMDAvcGF5bWVudHMvY29uZmlybWF0aW9uZGRkmrJNuLDksy/oJsndfln2RU2HqsU=", "__EVENTVALIDATION"=>"/wEWAwKe4uapDAKZlNWrDALf6OqqDKXkd1nBoi+ODKZwicR2R5E/fu7S", "__PREVIOUSPAGE"=>"ldqJol32R_-L-GrJRFJDaJ9Z7XSG1Si-B0QvF35AoUAE5aRgL61p-9ETjeIZd_GB0"}
+Rendering template within layouts/application
+Rendering payments/confirmation
+Completed in 353ms (View: 3, DB: 0) | 200 OK [http://localhost/payments/confirmation]
+
+
+Processing PaymentsController#index (for 127.0.0.1 at 2009-04-09 15:52:28) [GET]
+Rendering template within layouts/application
+Rendering payments/index
+Completed in 629ms (View: 2, DB: 0) | 200 OK [http://localhost/payments]
+
+
+Processing PaymentsController#index (for 127.0.0.1 at 2009-04-09 15:52:45) [GET]
+Rendering template within layouts/application
+Rendering payments/index
+Completed in 713ms (View: 2, DB: 0) | 200 OK [http://localhost/payments]
+
+
+Processing PaymentsController#new (for 127.0.0.1 at 2009-04-09 16:33:27) [GET]
+Rendering template within layouts/application
+Rendering payments/new
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://localhost/payments/new]
+
+
+Processing PaymentsController#new (for 127.0.0.1 at 2009-04-09 16:34:12) [GET]
+Rendering template within layouts/application
+Rendering payments/new
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/payments/new]
+
+
+Processing PaymentsController#new (for 127.0.0.1 at 2009-04-09 16:46:07) [GET]
+Rendering template within layouts/application
+Rendering payments/new
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/payments/new]
+
+
+Processing PaymentsController#new (for 127.0.0.1 at 2009-04-09 16:46:14) [GET]
+Rendering template within layouts/application
+Rendering payments/new
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/payments/new]
+
+
+Processing PaymentsController#new (for 127.0.0.1 at 2009-04-09 16:48:05) [GET]
+Rendering template within layouts/application
+Rendering payments/new
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/payments/new]
+
+
+Processing PaymentsController#new (for 127.0.0.1 at 2009-04-09 16:48:14) [GET]
+Rendering template within layouts/application
+Rendering payments/new
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/payments/new]
+
+
+Processing PaymentsController#create (for 127.0.0.1 at 2009-04-09 16:48:16) [POST]
+  Parameters: {"submit"=>"Enviar", "authenticity_token"=>"a165HvSRzGx+6SdeJ+DTLxpf0MO03OBl5PCN9AFpd/c=", "cnpj"=>"", "pagamento"=>{"modulo"=>"Boleto"}, "phone"=>"33758640", "comprador"=>{"company"=>"", "cpf"=>"07291207673", "nome"=>"daniel lucas vaz lopes", "ddd"=>"31", "tipo"=>"Fisica", "rg"=>"MG10720985", "email"=>"contato@areacriacoes.com.br"}, "pedido"=>{"cobranca"=>{"endereco"=>"teste", "cep"=>"30535260", "cidade"=>"cidade teste", "bairro"=>"bairro teste", "numero"=>"12", "estado"=>"MG"}, "entrega"=>{"endereco"=>"teste", "cep"=>"30535260", "cidade"=>"cidade teste", "bairro"=>"bairro teste", "numero"=>"12", "estado"=>"MG"}}}
+Rendering template within layouts/application
+Rendering payments/create
+Completed in 607ms (View: 4, DB: 0) | 200 OK [http://localhost/payments]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-09 16:50:25) [POST]
+  Parameters: {"__EVENTTARGET"=>"btnEnviar", "tdi"=>"ac827a8d-9c75-4500-9eae-541ed0f15c12", "__EVENTARGUMENT"=>"", "__VIEWSTATE"=>"/wEPDwUKLTY2NTAzODQ0MQ9kFgICAw9kFgICAw8PFgIeC1Bvc3RCYWNrVXJsBStodHRwOi8vbG9jYWxob3N0OjMwMDAvcGF5bWVudHMvY29uZmlybWF0aW9uZGRkmrJNuLDksy/oJsndfln2RU2HqsU=", "__EVENTVALIDATION"=>"/wEWAwKe4uapDAKZlNWrDALf6OqqDKXkd1nBoi+ODKZwicR2R5E/fu7S", "__PREVIOUSPAGE"=>"ldqJol32R_-L-GrJRFJDaJ9Z7XSG1Si-B0QvF35AoUAE5aRgL61p-9ETjeIZd_GB0"}
+
+ActionController::MethodNotAllowed (Only get, put, and delete requests are allowed.):
+  
+
+Rendered rescues/_trace (22.4ms)
+Rendered rescues/_request_and_response (2.5ms)
+Rendering rescues/layout (method_not_allowed)
+/!\ FAILSAFE /!\  Thu Apr 09 16:52:20 -0300 2009
+  Status: 500 Internal Server Error
+  /Users/daniellopes/Desktop/testes/lw_pago_certo_uso/config/routes.rb:2: syntax error, unexpected ':', expecting kEND
+  map.resources :payments :only=>[:new,:create], :collections=>[:confirmation=>:post]
+                           ^
+/Users/daniellopes/Desktop/testes/lw_pago_certo_uso/config/routes.rb:2: syntax error, unexpected ',', expecting kEND
+  map.resources :payments :only=>[:new,:create], :collections=>[:confirmation=>:post]
+                                                ^
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:145:in `load_without_new_constant_marking'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:145:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:145:in `load'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:286:in `load_routes!'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:286:in `each'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:286:in `load_routes!'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:266:in `load!'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:281:in `reload'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:59:in `reload_application'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:8:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/chunked.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:61:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:34:in `run'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Thu Apr 09 16:52:49 -0300 2009
+  Status: 500 Internal Server Error
+  /Users/daniellopes/Desktop/testes/lw_pago_certo_uso/config/routes.rb:2: syntax error, unexpected ':', expecting kEND
+  map.resources :payments :only=>[:new,:create], :collections=>{:confirmation=>:post}
+                           ^
+/Users/daniellopes/Desktop/testes/lw_pago_certo_uso/config/routes.rb:2: syntax error, unexpected ',', expecting kEND
+  map.resources :payments :only=>[:new,:create], :collections=>{:confirmation=>:post}
+                                                ^
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:145:in `load_without_new_constant_marking'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:145:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:145:in `load'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:286:in `load_routes!'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:286:in `each'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:286:in `load_routes!'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:266:in `load!'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:281:in `reload'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:59:in `reload_application'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:8:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/chunked.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:61:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:34:in `run'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Thu Apr 09 16:52:56 -0300 2009
+  Status: 500 Internal Server Error
+  /Users/daniellopes/Desktop/testes/lw_pago_certo_uso/config/routes.rb:2: syntax error, unexpected '\n', expecting tASSOC
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:145:in `load_without_new_constant_marking'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:145:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:145:in `load'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:286:in `load_routes!'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:286:in `each'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:286:in `load_routes!'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:266:in `load!'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:281:in `reload'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:59:in `reload_application'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:8:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/chunked.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:61:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:34:in `run'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+
+Processing PaymentsController#new (for 127.0.0.1 at 2009-04-09 16:53:41) [GET]
+Rendering template within layouts/application
+Rendering payments/new
+Completed in 67ms (View: 66, DB: 0) | 200 OK [http://localhost/payments/new]
+
+
+Processing PaymentsController#new (for 127.0.0.1 at 2009-04-09 16:53:46) [GET]
+Rendering template within layouts/application
+Rendering payments/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/payments/new]
+
+
+Processing PaymentsController#create (for 127.0.0.1 at 2009-04-09 16:54:46) [POST]
+  Parameters: {"submit"=>"Enviar", "authenticity_token"=>"a165HvSRzGx+6SdeJ+DTLxpf0MO03OBl5PCN9AFpd/c=", "cnpj"=>"", "pagamento"=>{"modulo"=>"Boleto"}, "phone"=>"33758640", "comprador"=>{"company"=>"", "cpf"=>"07291207673", "nome"=>"daniel lucas vaz lopes", "ddd"=>"31", "tipo"=>"Fisica", "rg"=>"MG10720985", "email"=>"contato@areacriacoes.com.br"}, "pedido"=>{"cobranca"=>{"endereco"=>"teste", "cep"=>"30535260", "cidade"=>"cidade teste", "bairro"=>"bairro teste", "numero"=>"12", "estado"=>"MG"}, "entrega"=>{"endereco"=>"teste", "cep"=>"30535260", "cidade"=>"cidade teste", "bairro"=>"bairro teste", "numero"=>"12", "estado"=>"MG"}}}
+Rendering template within layouts/application
+Rendering payments/create
+Completed in 555ms (View: 4, DB: 0) | 200 OK [http://localhost/payments]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-09 16:54:58) [POST]
+  Parameters: {"__EVENTTARGET"=>"btnEnviar", "tdi"=>"45f1196d-7502-497e-894e-a8093f52a897", "__EVENTARGUMENT"=>"", "__VIEWSTATE"=>"/wEPDwUKLTY2NTAzODQ0MQ9kFgICAw9kFgICAw8PFgIeC1Bvc3RCYWNrVXJsBStodHRwOi8vbG9jYWxob3N0OjMwMDAvcGF5bWVudHMvY29uZmlybWF0aW9uZGRkmrJNuLDksy/oJsndfln2RU2HqsU=", "__EVENTVALIDATION"=>"/wEWAwKe4uapDAKZlNWrDALf6OqqDKXkd1nBoi+ODKZwicR2R5E/fu7S", "__PREVIOUSPAGE"=>"ldqJol32R_-L-GrJRFJDaJ9Z7XSG1Si-B0QvF35AoUAE5aRgL61p-9ETjeIZd_GB0"}
+
+ActionController::RoutingError (No route matches "/payments/confirmation" with {:method=>:post}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PaymentsController#create (for 127.0.0.1 at 2009-04-09 16:55:22) [POST]
+  Parameters: {"submit"=>"Enviar", "authenticity_token"=>"a165HvSRzGx+6SdeJ+DTLxpf0MO03OBl5PCN9AFpd/c=", "cnpj"=>"", "pagamento"=>{"modulo"=>"Boleto"}, "phone"=>"33758640", "comprador"=>{"company"=>"", "cpf"=>"07291207673", "nome"=>"daniel lucas vaz lopes", "ddd"=>"31", "tipo"=>"Fisica", "rg"=>"MG10720985", "email"=>"contato@areacriacoes.com.br"}, "pedido"=>{"cobranca"=>{"endereco"=>"teste", "cep"=>"30535260", "cidade"=>"cidade teste", "bairro"=>"bairro teste", "numero"=>"12", "estado"=>"MG"}, "entrega"=>{"endereco"=>"teste", "cep"=>"30535260", "cidade"=>"cidade teste", "bairro"=>"bairro teste", "numero"=>"12", "estado"=>"MG"}}}
+Rendering template within layouts/application
+Rendering payments/create
+Completed in 664ms (View: 1, DB: 0) | 200 OK [http://localhost/payments]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-09 16:55:29) [GET]
+
+ActionController::RoutingError (No route matches "/payments/create" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-09 16:55:34) [GET]
+
+ActionController::MethodNotAllowed (Only post requests are allowed.):
+  
+
+Rendered rescues/_trace (21.8ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (method_not_allowed)
+
+
+Processing PaymentsController#new (for 127.0.0.1 at 2009-04-09 16:55:52) [GET]
+Rendering template within layouts/application
+Rendering payments/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/payments/new]
+
+
+Processing PaymentsController#create (for 127.0.0.1 at 2009-04-09 16:56:23) [POST]
+  Parameters: {"submit"=>"Enviar", "authenticity_token"=>"a165HvSRzGx+6SdeJ+DTLxpf0MO03OBl5PCN9AFpd/c=", "cnpj"=>"", "pagamento"=>{"modulo"=>"Boleto"}, "phone"=>"33758640", "comprador"=>{"company"=>"", "cpf"=>"07291207673", "nome"=>"daniel lucas vaz lopes", "ddd"=>"31", "tipo"=>"Fisica", "rg"=>"MG10720985", "email"=>"contato@areacriacoes.com.br"}, "pedido"=>{"cobranca"=>{"endereco"=>"teste", "cep"=>"30535260", "cidade"=>"cidade teste", "bairro"=>"bairro teste", "numero"=>"12", "estado"=>"MG"}, "entrega"=>{"endereco"=>"", "cep"=>"", "cidade"=>"", "bairro"=>"", "numero"=>"", "estado"=>""}}}
+Rendering template within layouts/application
+Rendering payments/create
+Completed in 477ms (View: 1, DB: 0) | 200 OK [http://localhost/payments]
+
+
+Processing PaymentsController#new (for 127.0.0.1 at 2009-04-09 16:56:31) [GET]
+Rendering template within layouts/application
+Rendering payments/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/payments/new]
+
+
+Processing PaymentsController#create (for 127.0.0.1 at 2009-04-09 16:57:06) [POST]
+  Parameters: {"submit"=>"Enviar", "authenticity_token"=>"a165HvSRzGx+6SdeJ+DTLxpf0MO03OBl5PCN9AFpd/c=", "cnpj"=>"", "pagamento"=>{"modulo"=>"Boleto"}, "phone"=>"33758640", "comprador"=>{"company"=>"", "cpf"=>"07291207673", "nome"=>"daniel lucas vaz lopes", "ddd"=>"31", "tipo"=>"Fisica", "rg"=>"MG10720985", "email"=>"contato@areacriacoes.com.br"}, "pedido"=>{"cobranca"=>{"endereco"=>"teste", "cep"=>"30535260", "cidade"=>"cidade teste", "bairro"=>"bairro teste", "numero"=>"12", "estado"=>"MG"}, "entrega"=>{"endereco"=>"teste", "cep"=>"30535260", "cidade"=>"cidade teste", "bairro"=>"bairro teste", "numero"=>"12", "estado"=>"MG"}}}
+Rendering template within layouts/application
+Rendering payments/create
+Completed in 658ms (View: 1, DB: 0) | 200 OK [http://localhost/payments]
+
+
+Processing PaymentsController#confirmation (for 127.0.0.1 at 2009-04-09 16:57:16) [POST]
+  Parameters: {"__EVENTTARGET"=>"btnEnviar", "tdi"=>"442d8432-08e2-4b31-b5b9-baddf9c0b699", "__EVENTARGUMENT"=>"", "__VIEWSTATE"=>"/wEPDwUKLTY2NTAzODQ0MQ9kFgICAw9kFgICAw8PFgIeC1Bvc3RCYWNrVXJsBStodHRwOi8vbG9jYWxob3N0OjMwMDAvcGF5bWVudHMvY29uZmlybWF0aW9uZGRkmrJNuLDksy/oJsndfln2RU2HqsU=", "__EVENTVALIDATION"=>"/wEWAwKe4uapDAKZlNWrDALf6OqqDKXkd1nBoi+ODKZwicR2R5E/fu7S", "__PREVIOUSPAGE"=>"ldqJol32R_-L-GrJRFJDaJ9Z7XSG1Si-B0QvF35AoUAE5aRgL61p-9ETjeIZd_GB0"}
+Rendering template within layouts/application
+Rendering payments/confirmation
+Completed in 685ms (View: 27, DB: 0) | 200 OK [http://localhost/payments/confirmation]

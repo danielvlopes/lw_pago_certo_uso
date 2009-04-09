@@ -1,0 +1,4 @@
+<% form_tag LwPagtoCerto::DefaultCheckoutUrl do %>
+	<%= hidden_field_tag "tdi", @retorno[:id_transacao] %>
+  <%= submit_tag "Pagar", :id => "submit", :name => "submit", :disable_with => "Aguarde..." %>
+<% end -%>

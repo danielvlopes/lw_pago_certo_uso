@@ -1,0 +1,63 @@
+<% form_tag :action => "create" do %>
+
+	<h3>Comprador</h3>
+
+	<p>Nome: <%= text_field_tag "comprador[nome]" %></p>
+	<p>Email: <%= text_field_tag "comprador[email]" %></p>
+	<p>CPF: <%= text_field_tag "comprador[cpf]" %></p>
+	<p>RG: <%= text_field_tag "comprador[rg]" %></p>
+	<p>Tel: <%= text_field_tag "comprador[ddd]", "",:size=>3 %> <%= text_field_tag :phone %></p>
+	<p>
+		Pessoa: 
+		<%= radio_button_tag "comprador[tipo]", "Fisica" %> Física
+		<%= radio_button_tag "comprador[tipo]", "Juridica" %> Jurídica
+	</p>
+	<p>Raz&atilde;o social: <%= text_field_tag "comprador[company]" %></p>
+	<p>CNPJ: <%= text_field_tag :cnpj %></p>
+
+	<hr/>
+
+	<h3>Pagamento</h3>
+	
+	<p>
+		Pessoa: 
+		<%= radio_button_tag "pagamento[modulo]", "Boleto" %> Boleto
+		<%= radio_button_tag "pagamento[modulo]", "CartaoCredito" %> Cartão de Crédito
+	</p>
+
+	<p>
+		Tipo Cartão: 
+		<%= radio_button_tag "pagamento[tipo]", "Visa" %> Visa
+		<%= radio_button_tag "pagamento[tipo]", "AmericanExpress" %> American Express
+	</p>
+
+	<hr/>
+
+	<h3>Cobrança</h3>
+
+	<p>Endereço <%= text_field_tag "pedido[cobranca][endereco]" %></p>
+	<p>Número <%= text_field_tag "pedido[cobranca][numero]" %></p>
+	<p>Bairro <%= text_field_tag "pedido[cobranca][bairro]" %></p>
+	<p>Cidade <%= text_field_tag "pedido[cobranca][cidade]" %></p>
+	<p>Cep <%= text_field_tag "pedido[cobranca][cep]" %></p>
+	<p>Estado <%= text_field_tag "pedido[cobranca][estado]" %></p>
+
+	<hr/>
+
+	<h3>Entrega</h3>
+
+	<p>Endereço <%= text_field_tag "pedido[entrega][endereco]" %></p>
+	<p>Número <%= text_field_tag "pedido[entrega][numero]" %></p>
+	<p>Bairro <%= text_field_tag "pedido[entrega][bairro]" %></p>
+	<p>Cidade <%= text_field_tag "pedido[entrega][cidade]" %></p>
+	<p>Cep <%= text_field_tag "pedido[entrega][cep]" %></p>
+	<p>Estado <%= text_field_tag "pedido[entrega][estado]" %></p>
+
+	<hr/>
+
+	Pedido: 12345
+	Valor: 00
+	
+	<p><%= submit_tag "Enviar", :id => "submit", :name => "submit", :disable_with => "Please wait..." %></p>
+
+<% end -%>
